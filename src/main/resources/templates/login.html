@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h2>登入</h2>
+<!--當輸入錯誤時 顯示訊息-->
+<div th:if="${errorMessage}" style="color:red;">
+    <p th:text="${erroerMessage}"></p>
+</div>
+
+<!--登入表單-->
+<form th:action="@{/login}" method="post">
+    <label for="username">使用者名稱: </label>
+    <input type="text" id="username" name="username" required><br>
+<!--required: 表示該欄位為必填-->
+    <label for="password">密碼: </label>
+    <input type="password" id="password" name="password" required><br>
+
+    <button type="submit">登入</button>
+</form>
+
+
+
+</body>
+</html>
