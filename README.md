@@ -31,6 +31,8 @@ A simple Spring Boot web application that supports user registration and login, 
 ## 📁 Project Structure
 
 ## 🆙 version
+### v1.0.3 (2025/05/21)
+- Set login page more colorful
 ### v1.0.2 (2025/05/21)
 - Added user registration functionality
 ### v1.0.1 (2025/05/21)
