@@ -1,0 +1,92 @@
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button,
+.back-link a {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+button:hover,
+.back-link a:hover {
+    background-color: #45a049;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 10px;
+}
+/* 新增 .form-group 樣式 */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 120px; /* 統一長度，足夠容納最長文字 */
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: right; /* 讓冒號靠右對齊 */
+    white-space: nowrap; /* 防止換行 */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}

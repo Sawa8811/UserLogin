@@ -29,3 +29,8 @@ A simple Spring Boot web application that supports user registration and login, 
 4. Run `DemoApplication.java`
 
 ## 📁 Project Structure
+
+## 🆙 version
+### v1.0.1 (2025/05/21)
+- Set login page as default route
+- Implemented registration button
