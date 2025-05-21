@@ -8,7 +8,7 @@
 <h2>登入</h2>
 <!--當輸入錯誤時 顯示訊息-->
 <div th:if="${errorMessage}" style="color:red;">
-    <p th:text="${erroerMessage}"></p>
+    <p th:text="${errorMessage}"></p>
 </div>
 
 <!--登入表單-->
@@ -22,6 +22,8 @@
     <button type="submit">登入</button>
 </form>
 
+
+<p>還沒有帳號? <a th:href="@{/register}">註冊</a></p>
 
 
 </body>

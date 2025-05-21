@@ -29,7 +29,14 @@ public class UserController {
 //        } else {
 //            return "用戶已存在，註冊失敗";
 //        }
+//
 //    }
+    // 預設跳轉到登入頁面
+    @GetMapping("/")
+    public String root() {
+        return "redirect:/login";
+    }
+
     // 顯示註冊頁面請求
     @GetMapping("/register")
     public String showRegisterForm() {
@@ -66,7 +73,7 @@ public class UserController {
             session.setAttribute("user", loginUser);
             return "redirect:/home"; // 登入成功後重定向到首頁
         } else {
-            model.addAttribute("message", "登入失敗，請檢查用戶名和密碼");
+            model.addAttribute("errorMessage", "登入失敗，請檢查用戶名和密碼");
             return "login"; // 登入失敗，返回登入頁面
         }
     }
